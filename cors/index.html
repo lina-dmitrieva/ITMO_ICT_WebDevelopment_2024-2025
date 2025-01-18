@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../modelslab3/">
+        <link rel="prev" href="../serializers/">
       
       
-        <link rel="next" href="../cors/">
+        <link rel="next" href="../router4/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Методы сериализации - Документация к лабораторным работам</title>
+        <title>Добавление CORS - Документация к лабораторным работам</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#serializers" class="md-skip">
+        <a href="#cors-cross-origin-resource-sharing" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Методы сериализации
+              Добавление CORS
             
           </span>
         </div>
@@ -483,19 +483,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -509,7 +507,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Третья лабораторная работа
@@ -541,30 +539,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Методы сериализации
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../serializers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -573,122 +551,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Описание сериализаторов
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Описание сериализаторов">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#printshopserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      PrintShopSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspaperSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#printrunserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      PrintRunSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deliveryserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      DeliverySerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperaddressesserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspaperAddressesSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#editoroflargestcirculationserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      EditorOfLargestCirculationSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#postofficesforexpensivenewspapersserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      PostOfficesForExpensiveNewspapersSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperswithlowquantityserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspapersWithLowQuantitySerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperdestinationsserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspaperDestinationsSerializer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -705,17 +567,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -729,7 +593,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Четвертая лабораторная работа
@@ -740,10 +604,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../cors/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Добавление CORS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -752,6 +634,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cors-cross-origin-resource-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Добавление CORS (Cross-origin resource sharing) в проект
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Добавление CORS (Cross-origin resource sharing) в проект">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cors-django-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Добавим CORS в настройки django-проекта
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Определение его middleware сверх всех остальных:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      И добавим позволительные домены
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -844,8 +786,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -854,91 +794,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#cors-cross-origin-resource-sharing" class="md-nav__link">
     <span class="md-ellipsis">
-      Описание сериализаторов
+      Добавление CORS (Cross-origin resource sharing) в проект
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Описание сериализаторов">
+    <nav class="md-nav" aria-label="Добавление CORS (Cross-origin resource sharing) в проект">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#printshopserializer" class="md-nav__link">
+  <a href="#cors-django-" class="md-nav__link">
     <span class="md-ellipsis">
-      PrintShopSerializer
+      Добавим CORS в настройки django-проекта
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#newspaperserializer" class="md-nav__link">
+  <a href="#middleware" class="md-nav__link">
     <span class="md-ellipsis">
-      NewspaperSerializer
+      Определение его middleware сверх всех остальных:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#printrunserializer" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      PrintRunSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deliveryserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      DeliverySerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperaddressesserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspaperAddressesSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#editoroflargestcirculationserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      EditorOfLargestCirculationSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#postofficesforexpensivenewspapersserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      PostOfficesForExpensiveNewspapersSerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperswithlowquantityserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspapersWithLowQuantitySerializer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newspaperdestinationsserializer" class="md-nav__link">
-    <span class="md-ellipsis">
-      NewspaperDestinationsSerializer
+      И добавим позволительные домены
     </span>
   </a>
   
@@ -964,83 +850,15 @@
                   
 
 
-<h1 id="serializers">Serializers<a class="headerlink" href="#serializers" title="Permanent link">&para;</a></h1>
-<h2 id="_1">Описание сериализаторов<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="printshopserializer">PrintShopSerializer<a class="headerlink" href="#printshopserializer" title="Permanent link">&para;</a></h3>
-<p>Сериализатор для модели PrintShop. Используется для работы с данными типографий.</p>
-<pre><code class="language-python">class PrintShopSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = PrintShop
-        fields = '__all__'
-</code></pre>
-<p>Поля:
-- Все поля модели PrintShop</p>
-<h3 id="newspaperserializer">NewspaperSerializer<a class="headerlink" href="#newspaperserializer" title="Permanent link">&para;</a></h3>
-<p>Сериализатор для модели Newspaper. Предназначен для работы с данными о газетах.</p>
-<pre><code class="language-python">class NewspaperSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Newspaper
-        fields = '__all__'
-</code></pre>
-<p>Поля:
-- Все поля модели Newspaper</p>
-<h3 id="printrunserializer">PrintRunSerializer<a class="headerlink" href="#printrunserializer" title="Permanent link">&para;</a></h3>
-<p>Сериализатор для модели PrintRun. Включает вложенный сериализатор PrintShopSerializer для отображения данных о типографии.</p>
-<pre><code class="language-python">class PrintRunSerializer(serializers.ModelSerializer):
-    printshop = PrintShopSerializer()
-    class Meta:
-        model = PrintRun
-        fields = ['id', 'quantity', 'newspaper', 'printshop']
-</code></pre>
-<p>Поля:
-- id – ID записи о тираже.
-- quantity – Количество напечатанных экземпляров.
-- newspaper – ID газеты.
-- printshop – Вложенный объект типографии (сериализован с помощью PrintShopSerializer).</p>
-<h3 id="deliveryserializer">DeliverySerializer<a class="headerlink" href="#deliveryserializer" title="Permanent link">&para;</a></h3>
-<p>Сериализатор для модели Delivery. Используется для отображения данных о доставках.</p>
-<pre><code class="language-python">class DeliverySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Delivery
-        fields = '__all__'
-</code></pre>
-<p>Поля:
-- Все поля модели Delivery.</p>
-<h3 id="newspaperaddressesserializer">NewspaperAddressesSerializer<a class="headerlink" href="#newspaperaddressesserializer" title="Permanent link">&para;</a></h3>
-<p>Используется для отображения адресов почтовых отделений для указанной газеты.</p>
-<pre><code class="language-python">class NewspaperAddressesSerializer(serializers.Serializer):
-    addresses = serializers.ListField(child=serializers.CharField())
-</code></pre>
-<p>Поля:
-- addresses – Список адресов почтовых отделений.</p>
-<h3 id="editoroflargestcirculationserializer">EditorOfLargestCirculationSerializer<a class="headerlink" href="#editoroflargestcirculationserializer" title="Permanent link">&para;</a></h3>
-<p>Возвращает имя редактора газеты с наибольшим тиражом.</p>
-<pre><code class="language-python">class EditorOfLargestCirculationSerializer(serializers.Serializer):
-    editor = serializers.CharField()
-</code></pre>
-<p>Поля:
-- editor – Имя и фамилия редактора.</p>
-<h3 id="postofficesforexpensivenewspapersserializer">PostOfficesForExpensiveNewspapersSerializer<a class="headerlink" href="#postofficesforexpensivenewspapersserializer" title="Permanent link">&para;</a></h3>
-<p>Сериализует данные о почтовых отделениях, где распространяются дорогие газеты.</p>
-<pre><code class="language-python">class PostOfficesForExpensiveNewspapersSerializer(serializers.Serializer):
-    post_offices = serializers.ListField(child=serializers.CharField())
-</code></pre>
-<p>Поля:
-- post_offices – Список адресов почтовых отделений</p>
-<h3 id="newspaperswithlowquantityserializer">NewspapersWithLowQuantitySerializer<a class="headerlink" href="#newspaperswithlowquantityserializer" title="Permanent link">&para;</a></h3>
-<p>Возвращает данные о газетах с тиражом ниже указанного значения.</p>
-<pre><code class="language-python">class NewspapersWithLowQuantitySerializer(serializers.Serializer):
-    newspapers = serializers.ListField(child=serializers.DictField())
-</code></pre>
-<p>Поля:
-- newspapers – Список словарей с данными о газетах.</p>
-<h3 id="newspaperdestinationsserializer">NewspaperDestinationsSerializer<a class="headerlink" href="#newspaperdestinationsserializer" title="Permanent link">&para;</a></h3>
-<p>Отображает адреса доставки указанной газеты.</p>
-<pre><code class="language-python">class NewspaperDestinationsSerializer(serializers.Serializer):
-    destinations = serializers.ListField(child=serializers.CharField())
-</code></pre>
-<p>Поля:
-- destinations – Список адресов.</p>
+  <h1>Добавление CORS</h1>
+
+<h2 id="cors-cross-origin-resource-sharing">Добавление CORS (Cross-origin resource sharing) в проект<a class="headerlink" href="#cors-cross-origin-resource-sharing" title="Permanent link">&para;</a></h2>
+<h3 id="cors-django-">Добавим CORS в настройки django-проекта<a class="headerlink" href="#cors-django-" title="Permanent link">&para;</a></h3>
+<p><img alt="Настройки" src="../images/forcors.png" /></p>
+<h3 id="middleware">Определение его middleware сверх всех остальных:<a class="headerlink" href="#middleware" title="Permanent link">&para;</a></h3>
+<p><img alt="Настройки" src="../images/middleware.png" /></p>
+<h3 id="_1">И добавим позволительные домены<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p><img alt="Настройки" src="../images/corssettings.png" /></p>
 
 
 
